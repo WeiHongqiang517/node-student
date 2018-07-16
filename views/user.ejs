@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>学生成绩查询</title>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+  </head>
+  <body>
+    <div>
+        <h2>学生成绩查询</h2>
+      <table>
+        <tr>
+          <td>姓名</td>
+          <td>语文</td>
+          <td>英语</td>
+          <td>数学</td>
+        </tr>
+        <% for (var i=0; i<student.length; i++) { %>
+            <tr>
+                <td><%= student[i].name %></td>
+                <td><%= student[i].chinese %></td>
+                <td><%= student[i].english %></td>
+                <td><%= student[i].math %></td>
+            </tr>
+        <% } %>
+      </table>
+    </div>
+    
+  </body>
+</html>

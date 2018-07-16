@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>学生成绩录入</h1>
+    <form action="/" method="post">
+      <label for="">姓名：<input type="text" name="name"></label>
+      <label for="">语文：<input type="text" name="chinese"></label>
+      <label for="">英语：<input type="text" name="english"></label>
+      <label for="">数学：<input type="text" name="math"></label>
+      <input type="submit" value="保存">
+    </form>
+    <div>
+        <h2>学生成绩查询</h2>
+      <table>
+        <tr>
+          <td>姓名</td>
+          <td>语文</td>
+          <td>英语</td>
+          <td>数学</td>
+        </tr>
+      </table>
+    </div>
+    
+  </body>
+</html>
